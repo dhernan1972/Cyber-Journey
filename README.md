@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 https://github.com/dhernan1972/Cyber-Journey/blob/main/diagrams/Week12_Network_Diagram.jpg
 https://github.com/dhernan1972/Cyber-Journey/blob/main/diagrams/Wk13_Network_Diagram.jpg
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Istall-Elk file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -34,28 +34,28 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Windows          |
-| Web-1    |Container | 10.0.0.5   | Windows          |
-| Web-2    |Container | 10.0.0.6   | Windows          |
-| Web-3    |Container | 10.0.0.7   | Windows          |
+| Jump Box | Gateway  | 10.0.0.1   | Ubuntu 18.0.4    |
+| Web-1    |Container | 10.0.0.5   | Ubuntu 18.0.4    |
+| Web-2    |Container | 10.0.0.6   | Ubuntu 18.0.4    |
+| Web-3    |Container | 10.0.0.7   | Ubuntu 18.0.4    |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the ELK machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - _TODO: Add whitelisted IP addresses_
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by client.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | No                  | 10.0.0.1 10.0.0.2    |
+|Web 1/2/3 | No                  | 10.0.0.4 10.0.0.8    |
+|  ELK     | Yes                 | Any                  |
 
 ### Elk Configuration
 
