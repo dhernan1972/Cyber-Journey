@@ -116,7 +116,9 @@ The following Beats were installed and initiated to collect the following inform
   * Packetbeat collects packets that pass through the NIC, similar to Wireshark. We use it to generate a trace of all activity that takes place on the network,       in case later forensic analysis should be warranted.
  
  
+The following playbooks were used to install Filebeat and Metricbeat on the Target VM's:
 
+* filebeat_playbook
 
 
 
