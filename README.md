@@ -135,8 +135,10 @@ The following playbooks were used to install Filebeat and Metricbeat on the Targ
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the install_elk.yml file to a new VM.
+- Update the ansible hosts.yml file to create an ELK group and add the ELK server IP address. Specify which VM to install the playbook
+  by configuring the install_elk.yml file to run on VM in the ELK group(host). This will ensure the install_elk.yml file on runs on a machine in 
+  this specified group.  
 - Run the playbook, and navigate to http://your-IP:5601/app/kibana#/home?_g=() to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
