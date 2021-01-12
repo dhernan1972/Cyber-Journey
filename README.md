@@ -100,8 +100,7 @@ This ELK server is configured to monitor the following machines:
 
 
 
-The following Beats were installed on these machines and were implemented to collect the following information
-for these machines as well:
+The following Beats were installed and initiated to collect the following information from the target machines:
 
 * Filebeats
   
