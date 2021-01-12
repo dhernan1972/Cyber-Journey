@@ -63,6 +63,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
 it allows an administrator to automate creation, configuration and managment of multiple machines from one control machine.
+The following tasks are implented when installing the playbook:
 
 -Installs docker.io: the Docker engine, used for running containers
 
@@ -91,11 +92,9 @@ The playbook implements the following tasks:
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
--Web1 : 10.0.0.5
-
--Web2 : 10.0.0.6
-
--Web3 : 10.0.0.7
+*Web1 : 10.0.0.5
+*Web2 : 10.0.0.6
+*Web3 : 10.0.0.7
 
 
 - _TODO: List the IP addresses of the machines you are monitoring_
@@ -103,9 +102,7 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 
 *Filebeats
-
 *Metricbeats
-
 *Packetbeats
 
 
