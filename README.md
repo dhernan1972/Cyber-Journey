@@ -100,22 +100,27 @@ This ELK server is configured to monitor the following machines:
 
 
 
-We have installed the following Beats on these machines:
+The following Beats were installed on these machines and were implemented to collect the following information
+for these machines as well:
 
 * Filebeats
+  
+  * Filebeat detects changes to the log filesystem. In this instance Filebeats was used in the collection of Apache logs.
 
 * Metricbeats
-
-* Packetbeats
-
-These Beats allow us to collect the following information from each machine:
-
-* Filebeat detects changes to the log filesystem. In this instance Filebeats was used in the collection of Apache logs.
-
-* Metricbeat detects changes in system metrics, such as CPU usage. For this project Metricbeats was used to CPU and RAM statistics, 
+  
+  * Metricbeat detects changes in system metrics, such as CPU usage. For this project Metricbeats was used to CPU and RAM statistics, 
   failed attempts of privilige escalation and login attmepts through the SSH protocol.
 
-* Packetbeat collects packets that pass through the NIC, similar to Wireshark. We use it to generate a trace of all activity that takes place on the network, in case later forensic analysis should be warranted.
+* Packetbeats
+ 
+  * Packetbeat collects packets that pass through the NIC, similar to Wireshark. We use it to generate a trace of all activity that takes place on the network,       in case later forensic analysis should be warranted.
+ 
+ 
+
+
+
+
 
 
 
