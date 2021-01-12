@@ -118,7 +118,7 @@ The following Beats were installed and initiated to collect the following inform
  
 The following playbooks were used to install Filebeat and Metricbeat on the Target VM's:
 
-* filebeat_playbook
+* fhttps://github.com/dhernan1972/Cyber-Journey/blob/main/ansible/filebeat_playbook
 
 
 
