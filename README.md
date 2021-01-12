@@ -62,7 +62,8 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-°Installs docker.io: the Docker engine, used for running containers
+
+*Installs docker.io: the Docker engine, used for running containers
 *Installs python3-pip: Package used to install Python software
 *Installs docker module: Python client for Docker
 *Increases the virtual memory of the target VM in order to run the ELK container
@@ -80,6 +81,7 @@ The playbook implements the following tasks:
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
+
 *Web-1
 *Web-2
 *Web-3 
@@ -87,6 +89,7 @@ This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
 
 We have installed the following Beats on these machines:
+
 *Filebeats
 *Metricbeats
 *Packetbeats
