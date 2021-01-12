@@ -8,7 +8,7 @@ https://github.com/dhernan1972/Cyber-Journey/blob/main/diagrams/Wk13_Network_Dia
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Istall-Elk file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
-* Description of the Topologu
+* Description of the Topology
 * Access Policies
 * ELK Configuration
 * Beats in Use
@@ -85,6 +85,9 @@ The playbook implements the following tasks:
     * 9200:9200
   
     * 5044:5044
+    
+https://github.com/dhernan1972/Cyber-Journey/blob/main/ansible/install_elk    
+  
   
 
 
