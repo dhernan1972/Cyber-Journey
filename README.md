@@ -63,25 +63,17 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
 it allows an administrator to automate creation, configuration and managment of multiple machines from one control machine.
+
 The following tasks are implented when installing the playbook:
-
--Installs docker.io: the Docker engine, used for running containers
-
--Installs python3-pip: Package used to install Python software
-
--Installs docker module: Python client for Docker
-
--Increases the virtual memory of the target VM in order to run the ELK container
-
--Downloads and launches the Docker container called sebp/elk:761
-
--Configures the container to start with the following port mappings:
-  
-  -5601:5601
-  
-  -9200:9200
-  
-  -5044:5044
+*Installs docker.io: the Docker engine, used for running containers
+*Installs python3-pip: Package used to install Python software
+*Installs docker module: Python client for Docker
+*Increases the virtual memory of the target VM in order to run the ELK container
+*Downloads and launches the Docker container called sebp/elk:761
+*Configures the container to start with the following port mappings:
+  *5601:5601
+  *9200:9200
+  *5044:5044
   
 
 The playbook implements the following tasks:
@@ -91,10 +83,9 @@ The playbook implements the following tasks:
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-
-*Web1 : 10.0.0.5
-*Web2 : 10.0.0.6
-*Web3 : 10.0.0.7
+*Web1:10.0.0.5
+*Web2:10.0.0.6
+*Web3:10.0.0.7
 
 
 - _TODO: List the IP addresses of the machines you are monitoring_
